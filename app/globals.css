@@ -1,0 +1,17 @@
+/* 引入 Tourney 字體 API */
+@import url("https://fonts.googleapis.com/css2?family=Tourney&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

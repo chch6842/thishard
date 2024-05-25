@@ -1,0 +1,44 @@
+.container {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    background-color: var(--primary100);
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 12px;
+    scrollbar-width: none;
+    position: sticky;
+    top: 68px;
+    z-index: 997;
+  }
+
+  .container ul {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 521px;
+  }
+
+  .container ul li {
+    color: var(--primary600);
+    font-size: var(--xxs);
+    font-weight: var(--normal);
+    text-wrap: nowrap;
+    flex-shrink: 0;
+    padding: 0 12px 4px;
+  }
+
+  .container ul li:hover {
+    border-bottom: 1px solid var(--primary800);
+    color: var(--primary800);
+  }
+
+  .container ul .active {
+    border-bottom: 1px solid var(--primary800);
+    color: var(--primary800);
+  }
+}

@@ -1,0 +1,80 @@
+.card {
+  cursor: pointer;
+}
+
+.card .img_wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.card .img_wrapper img {
+  display: block;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .img_wrapper img {
+  transform: scale(1.1) rotate(2deg);
+}
+
+/* 工具樣式 */
+.px-16 {
+  padding: 0 16px !important;
+}
+
+.card_content {
+  margin-bottom: 24px;
+}
+
+.card_content h3 {
+  color: var(--primary700);
+  font-size: var(--m);
+  font-weight: var(--bolder);
+  line-height: 33.6px;
+  margin-bottom: 8px;
+}
+
+.card_content p {
+  color: var(--primary500);
+  font-size: var(--xxs);
+  font-weight: var(--normal);
+}
+
+.card_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card_tags li {
+  border-radius: 16px;
+  background-color: var(--primary200);
+  color: var(--primary700);
+  padding: 4px 12px;
+  text-wrap: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+
+.card_tags li:hover {
+  background-color: var(--primary700);
+  color: var(--primary200);
+}
+
+@media (max-width: 576px) {
+  .px-16 {
+    padding: 0 0 0 16px !important;
+  }
+
+  .card_content {
+    margin-bottom: 16px;
+  }
+
+  .card_content h3 {
+    font-size: var(--xs);
+  }
+
+  .card_tags {
+    gap: 8px;
+  }
+}

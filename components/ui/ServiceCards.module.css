@@ -1,0 +1,34 @@
+.card {
+  background: linear-gradient(to bottom right, #000000 50%, #1e1e1e 50%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 306px;
+  height: 306px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.heading {
+  color: var(--white);
+  font-size: var(--m);
+  font-weight: var(--bolder);
+  line-height: 42px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: var(--s);
+    line-height: 36px;
+  }
+}

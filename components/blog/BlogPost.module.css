@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 12px 120px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 34.5px 80px;
+  }
+}

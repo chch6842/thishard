@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
+  padding: 120px 12px;
+}
+
+.card_wrapper {
+  width: 100%;
+  max-width: 1296px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px 24px;
+}
+
+.pagination {
+  display: flex;
+  gap: 16px;
+}
+
+.pagination li {
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination li:first-child {
+  background-color: var(--primary800);
+}
+
+.pagination li:first-child a {
+  color: var(--white);
+}
+
+.pagination li:hover {
+  background-color: var(--primary800);
+}
+
+.pagination li:hover a {
+  color: var(--white);
+}
+
+.pagination li a {
+  color: var(--primary700);
+  display: block;
+  font-size: var(--s);
+  font-weight: var(--normal);
+  line-height: 36px;
+  width: 40px;
+  height: 40px;
+  padding: 2px 13px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .container {
+    gap: 48px;
+    padding: 80px 12px;
+  }
+
+  .card_wrapper {
+    row-gap: 48px;
+  }
+}

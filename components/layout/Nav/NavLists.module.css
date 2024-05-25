@@ -1,0 +1,55 @@
+.list {
+  position: relative;
+  padding: 4px 8px;
+}
+
+.list a {
+  color: var(--black);
+  font-size: var(--xxs);
+  font-weight: var(--normal);
+  transition: all 0.3s ease-in-out;
+}
+
+.list a:hover {
+  font-weight: var(--bold) !important;
+}
+
+.border {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.list:hover .border {
+  opacity: 1 !important;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--primary500);
+  border-left: 1px solid var(--primary500);
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  border-top: 1px solid var(--primary500);
+  border-right: 1px solid var(--primary500);
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid var(--primary500);
+  border-left: 1px solid var(--primary500);
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid var(--primary500);
+  border-right: 1px solid var(--primary500);
+}

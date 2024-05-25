@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 120px 24px 80px;
+}
+
+.container article {
+  width: 100%;
+  max-width: 966px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 32px 12px 40px;
+  }
+}

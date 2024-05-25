@@ -1,0 +1,94 @@
+.container {
+  background: linear-gradient(to bottom right, #000000 50%, #1e1e1e 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 120px 12px;
+}
+
+.processes_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card_and_arrow_container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.process_card {
+  background-color: var(--primary700);
+  border: 1px solid var(--primary500);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 655px;
+  gap: 32px;
+  padding: 24px 32px;
+}
+
+.process_number {
+  color: var(--primary500);
+  font-family: "Tourney", sans-serif;
+  font-size: 72px;
+  font-weight: var(--normal);
+  line-height: 86.4px;
+}
+
+.process_content h3 {
+  color: var(--white);
+  font-size: var(--m);
+  font-weight: var(--bolder);
+  line-height: 33.6px;
+  margin-bottom: 8px;
+}
+
+.process_content p {
+  color: var(--primary300);
+  font-size: var(--xs);
+  font-weight: var(--normal);
+  line-height: 30px;
+}
+
+.arrow_downward {
+  align-self: center;
+  filter: invert(33%) sepia(1%) saturate(0%) hue-rotate(100deg) brightness(101%)
+    contrast(85%);
+  width: 32px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    gap: 40px;
+    padding: 80px 12px;
+  }
+
+  .process_card {
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .process_number {
+    font-size: var(--xxl);
+    line-height: 57.6px;
+  }
+
+  .process_content h3 {
+    text-align: center;
+    font-size: var(--s);
+    line-height: 28.8px;
+  }
+
+  .process_content p {
+    text-align: justify;
+  }
+
+  .process_content p br {
+    display: none;
+  }
+}

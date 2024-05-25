@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 120px 0 80px;
+}
+
+.container p {
+  color: var(--primary500);
+  font-size: var(--xxs);
+  font-weight: var(--normal);
+}
+
+@media (max-width: 576px) {
+  .container {
+    gap: 16px;
+    padding: 40px 0;
+  }
+}

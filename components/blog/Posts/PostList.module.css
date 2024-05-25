@@ -1,0 +1,129 @@
+.post_list_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.post_list_card {
+  display: flex;
+  gap: 16px;
+}
+
+.post_list_card .img_wrapper {
+  border: 1px solid var(--primary200);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 306px;
+  overflow: hidden;
+}
+
+.post_list_card .img_wrapper img {
+  border-radius: 8px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.post_list_card:hover img {
+  transform: scale(1.1);
+}
+
+.content_wrapper {
+  color: var(--primary700);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 644px;
+  gap: 16px;
+}
+
+.content_wrapper .time_and_category {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.time_and_category time {
+  color: var(--primary600);
+  font-size: var(--xxs);
+  font-weight: var(--normal);
+}
+
+.time_and_category ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.time_and_category ul li {
+  background-color: var(--primary200);
+  color: var(--primary700);
+  border-radius: 16px;
+  padding: 4px 12px;
+  min-width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.time_and_category ul li:hover {
+  background-color: var(--primary700);
+  color: var(--primary200);
+}
+
+.content_wrapper h2 {
+  font-size: var(--xs);
+  font-weight: var(--bold);
+}
+
+.content_wrapper p {
+  font-size: var(--xxs);
+  font-weight: var(--normal);
+}
+
+@media (max-width: 1200px) {
+  .post_list_wrapper {
+    gap: 40px;
+  }
+
+  .post_list_card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .post_list_card .img_wrapper {
+    max-width: 100%;
+  }
+
+  .post_list_card .img_wrapper img {
+    width: 100%;
+  }
+
+  .content_wrapper {
+    width: 100%;
+  }
+
+  .content_wrapper .time_and_category {
+    justify-content: space-between;
+  }
+
+  .time_and_category ul {
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  /* 限制文字行數為 4 行 */
+  .content_wrapper p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
+/* 限制文字行數為 3 行 */
+@media (max-width: 576px) {
+  .content_wrapper p {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+}
